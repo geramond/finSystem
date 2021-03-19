@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import permissions, views, response
 
-# Create your views here.
+
+class HealthAPIView(views.APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def get(self, request):
+        return response.Response({'message': 'success'})

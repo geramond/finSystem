@@ -5,6 +5,12 @@ name = "pypi"
 
 [packages]
 django = "*"
+djangorestframework = "*"
+drf-yasg = "*"
+pytest = "*"
+pylint = "*"
+pytest-django = "*"
+pylint-django = "*"
 
 [dev-packages]
 
